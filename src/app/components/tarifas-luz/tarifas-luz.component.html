@@ -1,0 +1,35 @@
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <h1>Precio Mwh</h1>
+  </div>
+
+<ngx-charts-bar-vertical
+[view]="[800,400]"
+[results]="grafica"
+scheme="fire"
+[xAxisLabel]="'Horario'"
+[legendTitle]="'Horas'"
+[yAxisLabel]="'€/Mwh'"
+[legend]="true"
+[showXAxisLabel]="true"
+[showYAxisLabel]="true"
+[xAxis]="true"
+[yAxis]="true"
+[gradient]="true">
+</ngx-charts-bar-vertical>
+
+</div>
+
+<!--
+<div *ngFor="let tarifas of lecturasApi"    class="grid">
+  <p>1 {{tarifas.price}}</p>
+  <p>1 {{tarifas.date}}</p>
+  <p>1 {{tarifas.hour}}</p>
+  <p>1 {{tarifas.is_cheap}}</p>
+  <p>1 {{tarifas.market}}</p>
+</div>
+-->
+
+
